@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Mears Avenue Apartments Homepage</title>
+   <meta charset="utf-8">
+   <meta name="author" content="Anthony Schultz">
+   <meta name="description" content="Apartments in downtown Canton, NC">
+   <link href="styles.css" rel="stylesheet">
+   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+<script src="myscripts.js"></script>
+<div id="maindiv">
+   <main>
+      <button type="submit" id="colorButton" onclick="updateColors()">
+         <img src="images/sun.jpeg" alt="Image of of division line" id="colorImg">
+      </button>
+      <button type="submit" id="colorButton2" onclick="updateColorsTwo()">
+         <img src="images/moon.png" alt="Image of of division line" id="colorImg2">
+      </button>
+      <div id="navdiv">
+         <nav>
+            <ul>
+               <li>
+                  <a href="index.html" class="active-page">HOME</a>
+               </li>
+               <li>
+                  <a href="#mapdiv">MAP</a>
+               </li>
+               <li>
+                  <a href="#unitsdiv">UNITS</a>
+               </li>
+               <li>
+                  <a href="#contactdiv">CONTACT US</a>
+               </li>
+            </ul>
+         </nav>
+      </div>
+      <div id="headerdiv">
+         <img src="images/divider.png" alt="Image of of division line" class="dividerimg">
+         <h2>Mears Avenue Apartments</h2>
+         <br>
+         <img src="images/header-img.png" alt="Image of apartment" id="headerimg">
+         <br>
+      </div>
+      <div id="mapdiv">
+         <img src="images/divider.png" alt="Image of of division line" class="dividerimg">
+         <h2>Map Of Apartments</h2>
+         <img src="images/apartmentMap.png" alt="map of apartment" id="mapimg">
+         <h2>Entrance / Parking Lot</h2>
+         <img src="images/apartmentEntrance.png" alt="map of apartment" id="entranceimg">
+      </div>
+      <div id="unitsdiv">
+         <img src="images/divider.png" alt="Image of of division line" class="dividerimg">
+         <h2>Units Available</h2>
+         <div id=aptdiv>
+            <h3>Apartment Details</h3>
+            <p id="desc">Upstairs Studio Apartment</p>
+            <p id="rent">Rent - $850</p>
+            <p id="bed">Studio</p>
+            <p id="bath">1 Bathroom</p>
+            <p id="sqft">600 sqft</p>
+            <p id="pet">Under 25 pound pet OK</p>
+            <p id="avail">RENTED 09/22</p>
+         </div>
+         <img src="images/Apartment5.png" alt="images of apartment" id="apartmentimg">
+         <div id="navunit">
+            <nav>
+               <ul>
+                  <li>
+                     <a id="APT5" onclick="updateApt5()" href="#0">APT 5</a>
+                  </li>
+                  <li>
+                     <a id="APT6" onclick="updateApt6()" href="#0">APT 6</a>
+                  </li>
+                  <li>
+                     <a id="APT8" onclick="updateApt8()" href="#0">APT 8</a>
+                  </li>
+                  <li>
+                     <a id="APT14" onclick="updateApt14()" href="#0">APT 14</a>
+                  </li>
+                  <li>
+                     <a id="APT15" onclick="updateApt15()" href="#0">APT 15</a>
+                  </li>
+               </ul>
+            </nav>
+         </div>
+      </div>
+      <div id="contactdiv">
+         <img src="images/divider.png" alt="Image of of division line" class="dividerimg">
+         <h2>Contact Us</h2>
+         <p>Email: mearsavenueapartments@gmail.com</p>
+         <p>Call/Text: (925)-525-0251 </p>
+         <p>Or Use Contact Form Below</p>
+         <div id="formdiv">
+            <form id="contactform" method="post" action="https://wp.zybooks.com/form-viewer.php">
+               <label class="clabel" for="myName">Name*</label>
+               <input type="text" name="myName" id="myName" placeholder="Enter first and last name." required>
+               <label class="clabel" for="myAddress">Address</label>
+               <input type="text" name="myAddress" id="myAddress" placeholder="Street Address">
+               <label class="clabel" for="myCity">City</label>
+               <input type="text" name="myCity" id="myCity" placeholder="City">
+               <label class="clabel" for="myState">State</label>
+               <select size="1" name="myState" id="myState">
+                  <option value="AL">Alabama</option>
+                  <option value="AK">Alaska</option>
+                  <option value="AZ">Arizona</option>
+                  <option value="AR">Arkansas</option>
+                  <option value="CA">California</option>
+                  <option value="CO">Colorado</option>
+                  <option value="CT">Connecticut</option>
+                  <option value="DE">Delaware</option>
+                  <option value="DC">District Of Columbia</option>
+                  <option value="FL">Florida</option>
+                  <option value="GA">Georgia</option>
+                  <option value="HI">Hawaii</option>
+                  <option value="ID">Idaho</option>
+                  <option value="IL">Illinois</option>
+                  <option value="IN">Indiana</option>
+                  <option value="IA">Iowa</option>
+                  <option value="KS">Kansas</option>
+                  <option value="KY">Kentucky</option>
+                  <option value="LA">Louisiana</option>
+                  <option value="ME">Maine</option>
+                  <option value="MD">Maryland</option>
+                  <option value="MA">Massachusetts</option>
+                  <option value="MI">Michigan</option>
+                  <option value="MN">Minnesota</option>
+                  <option value="MS">Mississippi</option>
+                  <option value="MO">Missouri</option>
+                  <option value="MT">Montana</option>
+                  <option value="NE">Nebraska</option>
+                  <option value="NV">Nevada</option>
+                  <option value="NH">New Hampshire</option>
+                  <option value="NJ">New Jersey</option>
+                  <option value="NM">New Mexico</option>
+                  <option value="NY">New York</option>
+                  <option value="NC">North Carolina</option>
+                  <option value="ND">North Dakota</option>
+                  <option value="OH">Ohio</option>
+                  <option value="OK">Oklahoma</option>
+                  <option value="OR">Oregon</option>
+                  <option value="PA">Pennsylvania</option>
+                  <option value="RI">Rhode Island</option>
+                  <option value="SC">South Carolina</option>
+                  <option value="SD">South Dakota</option>
+                  <option value="TN">Tennessee</option>
+                  <option value="TX">Texas</option>
+                  <option value="UT">Utah</option>
+                  <option value="VT">Vermont</option>
+                  <option value="VA">Virginia</option>
+                  <option value="WA">Washington</option>
+                  <option value="WV">West Virginia</option>
+                  <option value="WI">Wisconsin</option>
+                  <option value="WY">Wyoming</option>
+               </select>
+               <label class="clabel" for="myZip">Zip</label>
+               <input type="text" name="myZip" id="myZip" placeholder="Zip Code">
+               <label class="clabel" for="myPhone">Phone*</label>
+               <input type="tel" name="myPhone" id="myPhone" placeholder="Phone" required>
+               <label class="clabel" for="myEmail">Email*</label>
+               <input type="email" name="myEmail" id="myEmail" placeholder="you@domain.com" required>
+               <fieldset>
+                  <legend>Preferred Method of Contact</legend>
+                  <input type="radio" name="prefContact" id="prefEmail" value="Email">
+                  <label class="clabel" for="prefEmail">Email</label>
+                  <input type="radio" name="prefContact" id="prefPhone" value="Phone">
+                  <label class="clabel" for="prefPhone">Phone</label>
+               </fieldset>
+               <label class="clabel" for="myComments" id="label-block">Comments</label>
+               <textarea name="myComments" id="myComments" cols="40" rows="4" required></textarea>
+               <section id="myButtons">
+                  <input type="reset" id="myReset" value="Reset Me">
+                  <input type="submit" id="mySubmit" value="Submit Me">
+               </section>
+            </form>
+         </div>
+      </div>
+         <div id="game1">
+            <img src="images/divider.png" alt="Image of of division line" class="dividerimg">
+            <h2>Guessing Game Example 1</h2>
+            <form>
+               <label for="numGuess">Enter a Number Between 1 and 10:</label>
+               <input type="number" name="numGuess" id="numGuess">
+               <input type="submit" name="guessGame" id="guessGame" value="Play the Game!" onclick="response()">
+               <label id="Result"> Result</label>
+            </form>
+         </div>
+   </main>
+   <footer id="foot">
+      <img src="images/divider.png" alt="Image of of division line" class="dividerimg">
+      <p>Mears Avenue Apartments</p>
+      <p>(925)-525-0251</p>
+      <p>MearsAvenueApartments@gmail.com</p>
+      <p>40 Mears Avenue, Canton, NC 28716</p>
+      <p>Copyright © 2022 - All Rights Reserved.</p>
+   </footer>
+</div>
+</body>
+</html>
